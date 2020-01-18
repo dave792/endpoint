@@ -1,5 +1,6 @@
 {
   "summary": [
+    "tests":
     {
       "pass": 20,
       "fail": 30,
