@@ -1,9 +1,9 @@
 {
   "summary": [
     {
-      "pass": "Sebastian",
-      "fail": "Eschweiler",
-      "invalid": "sebastian@codingthesmartway.com"
+      "pass": 20,
+      "fail": 30,
+      "invalid": 100
     }
   ]
 }
