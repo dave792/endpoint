@@ -1,5 +1,5 @@
 [
-  "results": [
+  "results" {
     {
       "summary":
       {
@@ -10,5 +10,5 @@
         "pending": 10
       }
     }
-  ]
+  }
 ]
