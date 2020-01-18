@@ -1,4 +1,4 @@
-  data={[
+  data{[
     ['Day', 'Pass', 'Fail', 'Pending'],
     ['Mon', 1000, 400, 200],
     ['Tue', 1170, 460, 250],
