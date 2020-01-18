@@ -1,10 +1,11 @@
 {
   "summary": [
-    "tests":
+    "tests": {
     {
       "pass": 20,
       "fail": 30,
       "invalid": 100
+    }
     }
   ]
 }
