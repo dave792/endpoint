@@ -1,4 +1,4 @@
-myObj = {
+"myObj" : {
   "name":"John",
   "age":30,
   "cars": {
