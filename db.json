@@ -1,23 +1,24 @@
 {
-  "Mon": [
-    {
-      "city": "New York City, NY",
-      "2010 population" : 8175000,
-      "2000 population": 8008000
-    },
-    {
-      "city": "New York City, NY",
-      "2010 population" : 8175000,
-      "2000 population": 8008000
-    },
-    {
-      "city": "New York City, NY",
-      "2010 population" : 8175000,
-      "2000 population": 8008000
-    },
-    {
-      "city": "New York City, NY",
-      "2010 population" : 8175000,
-      "2000 population": 8008000
-    }]
+  result = {
+  "20170007": {
+    "PASS": 1,
+    "FAIL":20,
+    "Pending":60
+  },
+  "20170008": {
+    "PASS": 1,
+    "FAIL":20,
+    "Pending":60
+  },
+  "20170009": {
+     "PASS": 1,
+    "FAIL":20,
+    "Pending":60
+  },
+  "20170010": {
+    "PASS": 1,
+    "FAIL":20,
+    "Pending":60
+  }
+}
 }
