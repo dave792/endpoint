@@ -132,44 +132,6 @@
                 "duration": 9.393692016601562e-05,
                 "outcome": "passed"
             }
-        },
-        {
-            "nodeid": "test_create_report.py::test_parametrized[2]",
-            "lineno": 67,
-            "outcome": "failed",
-            "keywords": [
-                "2",
-                "test_create_report0",
-                "test_create_report.py",
-                "pytestmark",
-                "parametrize",
-                "test_parametrized[2]"
-            ],
-            "setup": {
-                "duration": 0.0001544952392578125,
-                "outcome": "passed"
-            },
-            "call": {
-                "duration": 0.00020122528076171875,
-                "outcome": "failed",
-                "crash": {
-                    "path": "/tmp/pytest-of-user/pytest-40/test_create_report0/test_create_report.py",
-                    "lineno": 70,
-                    "message": "assert 2 == 1"
-                },
-                "traceback": [
-                    {
-                        "path": "test_create_report.py",
-                        "lineno": 70,
-                        "message": "AssertionError"
-                    }
-                ],
-                "longrepr": "x = 2\n\n    @pytest.mark.parametrize('x', [1, 2])\n    def test_parametrized(x):\n>       assert x == 1\nE       assert 2 == 1\n\ntest_create_report.py:70: AssertionError"
-            },
-            "teardown": {
-                "duration": 0.00012826919555664062,
-                "outcome": "passed"
-            }
         }
     ]
 }
