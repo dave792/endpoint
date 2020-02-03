@@ -97,28 +97,6 @@
     ],
     "tests": [
         {
-            "nodeid": "test_create_report.py::test_pass",
-            "lineno": 25,
-            "outcome": "passed",
-            "keywords": [
-                "test_create_report0",
-                "test_create_report.py",
-                "test_pass"
-            ],
-            "setup": {
-                "duration": 0.00013637542724609375,
-                "outcome": "passed"
-            },
-            "call": {
-                "duration": 0.00010704994201660156,
-                "outcome": "passed"
-            },
-            "teardown": {
-                "duration": 0.0004982948303222656,
-                "outcome": "passed"
-            }
-        },
-        {
             "nodeid": "test_create_report.py::test_fail_with_fixture",
             "lineno": 28,
             "outcome": "failed",
@@ -160,67 +138,6 @@
             }
         },
         {
-            "nodeid": "test_create_report.py::test_xfail",
-            "lineno": 33,
-            "outcome": "xfailed",
-            "keywords": [
-                "test_create_report0",
-                "test_create_report.py",
-                "pytestmark",
-                "test_xfail",
-                "xfail"
-            ],
-            "setup": {
-                "duration": 0.0004124641418457031,
-                "outcome": "passed"
-            },
-            "call": {
-                "duration": 0.00012755393981933594,
-                "outcome": "skipped",
-                "crash": {
-                    "path": "/tmp/pytest-of-user/pytest-40/test_create_report0/test_create_report.py",
-                    "lineno": 36,
-                    "message": "assert False"
-                },
-                "traceback": [
-                    {
-                        "path": "test_create_report.py",
-                        "lineno": 36,
-                        "message": "AssertionError"
-                    }
-                ],
-                "longrepr": "@pytest.mark.xfail(reason='testing xfail')\n    def test_xfail():\n>       assert False\nE       assert False\n\ntest_create_report.py:36: AssertionError"
-            },
-            "teardown": {
-                "duration": 0.00011134147644042969,
-                "outcome": "passed"
-            }
-        },
-        {
-            "nodeid": "test_create_report.py::test_xfail_but_passing",
-            "lineno": 37,
-            "outcome": "xpassed",
-            "keywords": [
-                "test_create_report0",
-                "test_create_report.py",
-                "pytestmark",
-                "xfail",
-                "test_xfail_but_passing"
-            ],
-            "setup": {
-                "duration": 0.00011181831359863281,
-                "outcome": "passed"
-            },
-            "call": {
-                "duration": 9.918212890625e-05,
-                "outcome": "passed"
-            },
-            "teardown": {
-                "duration": 9.632110595703125e-05,
-                "outcome": "passed"
-            }
-        },
-        {
             "nodeid": "test_create_report.py::test_fail_during_setup",
             "lineno": 41,
             "outcome": "error",
@@ -252,41 +169,6 @@
             }
         },
         {
-            "nodeid": "test_create_report.py::test_fail_during_teardown",
-            "lineno": 44,
-            "outcome": "error",
-            "keywords": [
-                "test_create_report0",
-                "test_create_report.py",
-                "test_fail_during_teardown"
-            ],
-            "setup": {
-                "duration": 0.00017595291137695312,
-                "outcome": "passed"
-            },
-            "call": {
-                "duration": 0.00010180473327636719,
-                "outcome": "passed"
-            },
-            "teardown": {
-                "duration": 0.00014543533325195312,
-                "outcome": "failed",
-                "crash": {
-                    "path": "/tmp/pytest-of-user/pytest-40/test_create_report0/test_create_report.py",
-                    "lineno": 22,
-                    "message": "assert False"
-                },
-                "traceback": [
-                    {
-                        "path": "test_create_report.py",
-                        "lineno": 22,
-                        "message": "AssertionError"
-                    }
-                ],
-                "longrepr": "def fn():\n>       assert False\nE       assert False\n\ntest_create_report.py:22: AssertionError"
-            }
-        },
-        {
             "nodeid": "test_create_report.py::test_skip",
             "lineno": 47,
             "outcome": "skipped",
@@ -304,87 +186,6 @@
             },
             "teardown": {
                 "duration": 9.393692016601562e-05,
-                "outcome": "passed"
-            }
-        },
-        {
-            "nodeid": "test_create_report.py::test_fail_nested",
-            "lineno": 51,
-            "outcome": "failed",
-            "keywords": [
-                "test_fail_nested",
-                "test_create_report0",
-                "test_create_report.py"
-            ],
-            "setup": {
-                "duration": 0.00010728836059570312,
-                "outcome": "passed"
-            },
-            "call": {
-                "duration": 0.00012683868408203125,
-                "outcome": "failed",
-                "crash": {
-                    "path": "/tmp/pytest-of-user/pytest-40/test_create_report0/test_create_report.py",
-                    "lineno": 55,
-                    "message": "TypeError: unsupported operand type(s) for -: 'int' and 'NoneType'"
-                },
-                "traceback": [
-                    {
-                        "path": "test_create_report.py",
-                        "lineno": 66,
-                        "message": ""
-                    },
-                    {
-                        "path": "test_create_report.py",
-                        "lineno": 64,
-                        "message": "in foo"
-                    },
-                    {
-                        "path": "test_create_report.py",
-                        "lineno": 64,
-                        "message": "in <listcomp>"
-                    },
-                    {
-                        "path": "test_create_report.py",
-                        "lineno": 60,
-                        "message": "in bar"
-                    },
-                    {
-                        "path": "test_create_report.py",
-                        "lineno": 55,
-                        "message": "TypeError"
-                    }
-                ],
-                "stdout": "foo\n0\nbar\n",
-                "longrepr": "def test_fail_nested():\n        def baz(o=1):\n            c = 3\n            return 2 - c - None\n        def bar(m, n=5):\n            b = 2\n            print(m)\n            print('bar')\n            return baz()\n        def foo():\n            a = 1\n            print('foo')\n            v = [bar(x) for x in range(3)]\n            return v\n>       foo()\n\ntest_create_report.py:66: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntest_create_report.py:64: in foo\n    v = [bar(x) for x in range(3)]\ntest_create_report.py:64: in <listcomp>\n    v = [bar(x) for x in range(3)]\ntest_create_report.py:60: in bar\n    return baz()\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\no = 1\n\n    def baz(o=1):\n        c = 3\n>       return 2 - c - None\nE       TypeError: unsupported operand type(s) for -: 'int' and 'NoneType'\n\ntest_create_report.py:55: TypeError"
-            },
-            "teardown": {
-                "duration": 0.00011205673217773438,
-                "outcome": "passed"
-            }
-        },
-        {
-            "nodeid": "test_create_report.py::test_parametrized[1]",
-            "lineno": 67,
-            "outcome": "passed",
-            "keywords": [
-                "test_create_report0",
-                "test_create_report.py",
-                "test_parametrized[1]",
-                "pytestmark",
-                "1",
-                "parametrize"
-            ],
-            "setup": {
-                "duration": 0.0001621246337890625,
-                "outcome": "passed"
-            },
-            "call": {
-                "duration": 0.00010347366333007812,
-                "outcome": "passed"
-            },
-            "teardown": {
-                "duration": 0.00011467933654785156,
                 "outcome": "passed"
             }
         },
