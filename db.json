@@ -53,21 +53,6 @@
                     "lineno": 28
                 },
                 {
-                    "nodeid": "test_create_report.py::test_xfail",
-                    "type": "Function",
-                    "lineno": 33
-                },
-                {
-                    "nodeid": "test_create_report.py::test_xfail_but_passing",
-                    "type": "Function",
-                    "lineno": 37
-                },
-                {
-                    "nodeid": "test_create_report.py::test_fail_during_setup",
-                    "type": "Function",
-                    "lineno": 41
-                },
-                {
                     "nodeid": "test_create_report.py::test_fail_during_teardown",
                     "type": "Function",
                     "lineno": 44
@@ -135,37 +120,6 @@
                 "outcome": "passed",
                 "stdout": "teardown\n",
                 "stderr": "teardownerr\n"
-            }
-        },
-        {
-            "nodeid": "test_create_report.py::test_fail_during_setup",
-            "lineno": 41,
-            "outcome": "error",
-            "keywords": [
-                "test_fail_during_setup",
-                "test_create_report0",
-                "test_create_report.py"
-            ],
-            "setup": {
-                "duration": 0.00017833709716796875,
-                "outcome": "failed",
-                "crash": {
-                    "path": "/tmp/pytest-of-user/pytest-40/test_create_report0/test_create_report.py",
-                    "lineno": 17,
-                    "message": "assert False"
-                },
-                "traceback": [
-                    {
-                        "path": "test_create_report.py",
-                        "lineno": 17,
-                        "message": "AssertionError"
-                    }
-                ],
-                "longrepr": "request = <SubRequest 'fail_setup_fixture' for <Function test_fail_during_setup>>\n\n    @pytest.fixture\n    def fail_setup_fixture(request):\n>       assert False\nE       assert False\n\ntest_create_report.py:17: AssertionError"
-            },
-            "teardown": {
-                "duration": 0.00012302398681640625,
-                "outcome": "passed"
             }
         },
         {
