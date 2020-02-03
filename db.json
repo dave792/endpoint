@@ -48,16 +48,6 @@
                     "lineno": 25
                 },
                 {
-                    "nodeid": "test_create_report.py::test_fail_with_fixture",
-                    "type": "Function",
-                    "lineno": 28
-                },
-                {
-                    "nodeid": "test_create_report.py::test_fail_during_teardown",
-                    "type": "Function",
-                    "lineno": 44
-                },
-                {
                     "nodeid": "test_create_report.py::test_skip",
                     "type": "Function",
                     "lineno": 47
